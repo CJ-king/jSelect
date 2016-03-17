@@ -3,6 +3,7 @@
  * Date: 2016-01-07 
  * Author: jinchangjiang <1003219989@qq.com>
  */
+
 (function($){
     $.jSelect=function(obj){
         var _this=$(obj),
