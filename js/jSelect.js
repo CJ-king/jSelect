@@ -11,7 +11,6 @@
 		},options);
 		var _this=$(this),
             handle=(new Date()).getTime().toString(36),
-            _style='<style type="text/css">html{_overflow:hidden}body{margin:0;padding:0;_overflow:auto;_height:100%}ul,li{margin:0;padding:0;}.jSelect{left:0px;position:fixed;top:0px;height:100%;width:100%;color:#000;*color:#b52007;background:rgba(0,0,0,0.3);background-color:#000\0;_position:absolute;*background:#000;filter:alpha(opacity=60);display:none;}.jSelect .container{position:absolute;top:20px;left:50%;margin-left:-305px;width:615px;height:80px;background-color:#ffffff;overflow-x:hidden;overflow-y:auto;}.jSelect .container .item{border:1px solid rgb(229,229,229);list-style:none;cursor:default;margin:1px;width:194px;height:40px;text-align:center;display:inline-block;float:left;}.jSelect .container .item .val{height:20px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}.jSelect .container .item .text{height:20px;line-height:20px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%;}.jSelect .container .item .noVText{height:40px;line-height:40px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%;}</style>',
             _replace=$('<input type="text"  value="" >'),
             _replace_hidden=$('<input type="hidden"  value="">'),
             html='<div id="'+handle+'" class="jSelect"><ul class="container">';
@@ -66,7 +65,6 @@
             _replace.val((options.isShowVal?(_this.val()+"-"):"")+_this.find("option:selected").text());
         }
         function init(){
-        	$("head").append(_style);
         	copy();
         	event();
         }
